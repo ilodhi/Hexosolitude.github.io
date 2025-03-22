@@ -175,8 +175,8 @@ initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
 <body>
   <div class="admin-panel">
     <h1>Simple Hexo Admin</h1>
-    <button class="button" onclick="window.location.href='/new-post.html'">New Post</button>
-    <button class="button" onclick="window.location.href='/deploy.html'">Deploy Site</button>
+    <button class="button" onclick="window.location.href='/hexosolitude/new-post.html'">New Post</button>
+    <button class="button" onclick="window.location.href='/hexosolitude/deploy.html'">Deploy Site</button>
   </div>
 
   <div class="admin-controls">
@@ -204,12 +204,12 @@ initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
     }
   }
 
-  // Would typically load posts from an API
+  // Fix the URLs to include base path
   document.getElementById('recent-posts').innerHTML = 
     '<ul>' +
-    '<li><a href="/2025/03/21/Example-Category-Post/">Example Category Post</a></li>' +
-    '<li><a href="/2025/03/21/First-Featured-Post/">First Featured Post</a></li>' +
-    '<li><a href="/2025/03/21/hello-world/">Hello World</a></li>' +
+    '<li><a href="/hexosolitude/2025/03/21/Example-Category-Post/">Example Category Post</a></li>' +
+    '<li><a href="/hexosolitude/2025/03/21/First-Featured-Post/">First Featured Post</a></li>' +
+    '<li><a href="/hexosolitude/2025/03/21/hello-world/">Hello World</a></li>' +
     '</ul>';
   </script>
 </body>
